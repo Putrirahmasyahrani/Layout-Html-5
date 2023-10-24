@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    body {
+      background-color: rgb(61, 61, 61);
+      margin: 0;
+    }
+    header {
+      background-color: orange;
+      padding-top: 2px;
+      padding-bottom: 2px;
+      padding-left: 20px;
+      padding-right: 20px;
+      margin: 0 5px;
+    }
+    nav {
+      background-color: yellow;
+    }
+    aside {
+      background-color: yellow;
+      width: 20%;
+      margin: 0 10px;
+      flex: 1;
+    }
+    .body {
+      display: flex;
+      padding: 10px 0;
+    }
+    .article {
+      flex: 4;
+      width: 100%;
+      margin: 0 5px;
+    }
+    article {
+      background-color: aqua;
+    }
+    article.top {
+      padding: 10px;
+    }
+    .section-wrapper {
+      display: flex;
+    }
+    .section-wrapper .section {
+      flex: 3;
+      width: 100%;
+    }
+    .section-wrapper .section section {
+      padding: 2px 5px;
+    }
+    .section-wrapper .section section:first-child {
+      margin-bottom: 5px;
+    }
+    .section-wrapper aside {
+      width: 20%;
+      flex: 1;
+      background-color: rgb(122, 249, 122);
+      padding: 10px 0 40px 10px;
+    }
+    section {
+      background-color: yellow;
+      padding-bottom: 20px;
+    }
+    article.buttom {
+      margin-top: 5px;
+      padding: 10px;
+    }
+    article.buttom section:first-child {
+      padding: 5px 20px;
+    }
+    article.buttom .section-second {
+      display: flex;
+      margin-top: 5px;
+      padding: 5px;
+    }
+    article.buttom .section-second p {
+      flex: 3;
+      padding: 0px 20px;
+    }
+    article.buttom .section-second aside {
+      background-color: rgb(122, 249, 122);
+      flex: 2;
+      padding-left: 10px;
+      padding-top: 10px;
+      padding-bottom: 50px;
+      margin-top: 10px;
+    }
+    footer {
+      background-color: orange;
+      padding-top: 2px;
+      padding-bottom: 2px;
+      padding-left: 20px;
+      padding-right: 20px;
+      margin: 0 5px;
+    }
+  </style>
+  <body>
+    <div>
+      <p style="padding-left: 10px; color: white">Wrapper div tag</p>
+      <header>
+        <p>Header</p>
+        <nav>
+          <p>Nav</p>
+        </nav>
+      </header>
+    </div>
+    <div class="body">
+      <aside>
+        <p>Nav</p>
+      </aside>
+      <div class="article">
+        <article class="top">
+          Article
+          <div class="section-wrapper">
+            <div class="section">
+              <section>
+                <p>Section</p>
+              </section>
+              <section>
+                <p>Section</p>
+              </section>
+            </div>
+            <aside>Aside</aside>
+          </div>
+        </article>
+        <article class="buttom">
+          Article
+          <div class="section">
+            <section>
+              <p>Section</p>
+            </section>
+            <section class="section-second">
+              <p>Section</p>
+              <aside>Aside</aside>
+            </section>
+          </div>
+        </article>
+      </div>
+    </div>
+    <footer>
+      <p>Header</p>
+      <nav>
+        <p>Nav</p>
+      </nav>
+    </footer>
+  </body>
+</html>
